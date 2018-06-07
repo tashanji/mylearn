@@ -1,0 +1,9 @@
+$def with (name)
+
+$if name:
+    <ul>
+    $for n in range(10):
+        <li>I just wanted to say <em>hello</em> to $name $n. </li>
+    </ul>
+$else:
+        <em>Hello</em>, world!
